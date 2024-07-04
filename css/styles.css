@@ -4,10 +4,13 @@
     --title-color: #000000;
     --text-color: #DF803E;                 
 }
-
-/* font-family: "Playfair Display", serif;
+/*
+font-family: "Playfair Display", serif;
 font-family: "Inter", sans-serif;
-font-family: "Roboto", sans-serif; */
+font-family: "Roboto", sans-serif;
+font-family: "Julius Sans One", sans-serif;
+font-family: "Gentium Book Plus", serif;
+*/
 
 a {
     text-decoration: none;
@@ -29,3 +32,54 @@ h1, h2, h3, h4, h5, h5, h6, p {
     font-weight: 400;
 }
 
+body {
+    font-family: "Gentium Book Plus";
+}
+
+.container {
+    width: 1678px;
+    padding: 0 15px; 
+    margin: 0 auto;
+}
+
+/* Хедер */
+
+.header {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid white;
+    background-color: var(--text-color);
+}
+
+.nav-items {
+    display: flex;  
+    margin-right: 362px;
+}
+
+.nav-item {
+    padding: 14px 10px;
+    gap: 10px;
+} 
+
+.nav-a {
+    color: var(--title-color);
+    font-weight: 300;
+}
+
+.addres-items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.addres-img {
+    width: 30px;
+}
+
+/* Герой */
+
+.advice {
+    display: flex;
+    background-color: var(--text-color);
+}
