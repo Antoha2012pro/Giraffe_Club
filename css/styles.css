@@ -1,15 +1,15 @@
 :root {
     --header-background: #FCFCFC;
-    --header-background: #DE742B;
+    --header-background2: #DE742B;
     --title-color: #000000;
     --text-color: #DF803E;                 
 }
+
 /*
 font-family: "Playfair Display", serif;
 font-family: "Inter", sans-serif;
 font-family: "Roboto", sans-serif;
 font-family: "Julius Sans One", sans-serif;
-font-family: "Gentium Book Plus", serif;
 */
 
 a {
@@ -32,29 +32,21 @@ h1, h2, h3, h4, h5, h5, h6, p {
     font-weight: 400;
 }
 
-body {
-    font-family: "Gentium Book Plus";
-}
-
 .container {
     width: 1678px;
     padding: 0 15px; 
     margin: 0 auto;
 }
 
+
+body {
+    font-family: "Bookman Old Style";
+}
+
 /* Хедер */
 
 .header {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid white;
-    background-color: var(--text-color);
-}
-
-.nav-items {
-    display: flex;  
-    margin-right: 362px;
 }
 
 .nav-item {
@@ -64,22 +56,413 @@ body {
 
 .nav-a {
     color: var(--title-color);
+    text-align: center;
+
+    /* Web/H4 */
+    font-size: 26px;
     font-weight: 300;
+    line-height: normal;
+    display: flex;
+    padding: 14px 10px;
+    gap: 10px;
 }
 
 .addres-items {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    justify-content: flex-start;
 }
 
-.addres-img {
-    width: 30px;
+.addres-item {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    gap: 8px;
 }
 
-/* Герой */
+/* Секція консультація */
 
 .advice {
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.advice-title {
+    color: var(--Font-Color-Black, #000);
+font-size: 90px;
+font-weight: 600;
+line-height: normal;
+}
+
+.advice-text {
+    color: var(--title-color);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+    width: 875px;
+}
+
+.advice-btn {
+    padding: 20px 42px;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--header-background);
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;  
+}
+
+.advice-img {
+    width: 539px;
+    flex-shrink: 0;
+}
+
+/* Про нас */
+
+.us-title {
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.us-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.us-text {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+    width: 290px;
+}
+
+/* Напрямки роботи */
+
+.work{
+    background-color: var(--text-color);
+}
+
+.work-title {
+    color: var(--header-background);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.work-number {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+    width: 44px;
+
+    flex-shrink: 0;
+}
+
+.work-text {
+    width: 723.119px;
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.work-btn {
+    padding: 20px 40px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--title-color);
+    background: var(--text-color);
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Вивчення іноземної мови */
+
+.language {
+
+}
+
+.language-title {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.language-img {
+    border-radius: 14px;
+    width: 956px;
+    flex-shrink: 0;
+}
+
+.language-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.language-number-text {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.language-text {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.study-number-text {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+    flex-shrink: 0;
+    width: 44px;
+}
+
+.study-type-text {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.study-text {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+    width: 373px;
+}
+
+.study-text:nth-child(2) {
+    width: 417px;
+}
+
+.study-text:nth-child(3) {
+    width: 429px;
+}
+
+/* Наші подорожі */
+
+.travel {
+
+}
+
+.travel-title {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.travel-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.travel-text1 {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+    margin-bottom: 40px;
+}
+
+.travel-text2 {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.travel-img {
+    border-radius: 14px;
+    width: 410px;
+}
+
+.travel-img:nth-child(1) {
+    border-radius: 14px;
+    width: 410px;
+}
+
+.travel-img:nth-child(2) {
+    border-radius: 14px;
+    width: 678px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(3) {
+    border-radius: 14px;
+    width: 557px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(4) {
+    border-radius: 14px;
+    width: 405px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(5) {
+    border-radius: 14px;
+    width: 524px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(6) {
+    border-radius: 14px;
+    width: 711px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(7) {
+    border-radius: 14px;
+    width: 286px;
+    flex-shrink: 0;
+}
+
+.travel-img:nth-child(8) {
+    border-radius: 14px;
+    width: 408px;
+    flex-shrink: 0;
+}
+
+/* Наша команда */
+
+.team {
+    background-color: var(--header-background2);
+}
+
+.team-items {
+    display: flex;
+}
+
+.team-title {
+    color: var(--header-background);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.team-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.team-img {
+    width: 400px;
+    border-radius: 14px;
+}
+
+.team-img:nth-child(2) {
+    width: 476px;
+    border-radius: 14px;
+}
+
+.team-caption {
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.team-text {
+    color: var(--title-color);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.team-text1-center {
+    width: 396px;
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.team-text2-center {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Відгуки */
+
+.reviews {
+
+}
+
+.reviews-title {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.reviews-heading {
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+
+.reviews-a {
+    width: 106px;
+    flex-shrink: 0;
+}
+
+.reviews-caption {
+    color: var(--title-color);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%; /* 44.2px */
+}
+
+.reviews-text1 {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.reviews-text2 {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Футер */
+
+.footer {
     background-color: var(--text-color);
 }
